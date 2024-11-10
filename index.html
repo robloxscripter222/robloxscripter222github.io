@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+    <title>Blackjack PWA</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Blackjack Game</h1>
+        <div id="player-cards">
+            <p><strong>Player Cards:</strong> <span id="player-cards-text">None</span></p>
+        </div>
+        <div id="dealer-cards">
+            <p><strong>Dealer Cards:</strong> <span id="dealer-cards-text">None</span></p>
+        </div>
+        <div id="player-score">
+            <p><strong>Player Score:</strong> <span id="player-score-text">0</span></p>
+        </div>
+        <div id="dealer-score">
+            <p><strong>Dealer Score:</strong> <span id="dealer-score-text">0</span></p>
+        </div>
+        <div class="input-container">
+            <input type="number" id="player-card-1" placeholder="Player Card 1" />
+            <input type="number" id="player-card-2" placeholder="Player Card 2" />
+            <button id="deal-cards">Deal Cards</button>
+        </div>
+        <div class="button-container">
+            <button id="hit-btn" class="btn" disabled>Hit</button>
+            <button id="stand-btn" class="btn" disabled>Stand</button>
+        </div>
+        <div id="game-message"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
